@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Task Scheduler Visualization</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Multi-Threaded Task Scheduler</h1>
+
+    <!-- buttons -->
+    <div class="buttons">
+
+        <button onclick="runFCFS()">
+            Run FCFS
+        </button>
+
+        <button onclick="runRoundRobin()">
+            Run Round Robin
+        </button>
+
+        <button onclick="runPriority()">
+            Run Priority
+        </button>
+
+    </div>
+
+
+    <!-- ready queue -->
+    <h2>Ready Queue</h2>
+
+    <div id="queue">
+
+        <div class="task task1">T1</div>
+        <div class="task task2">T2</div>
+        <div class="task task3">T3</div>
+        <div class="task task4">T4</div>
+        <div class="task task5">T5</div>
+
+    </div>
+
+
+    <!-- cpu box -->
+    <h2>CPU Execution</h2>
+
+    <div id="cpu">
+
+        Waiting...
+
+    </div>
+
+
+    <!-- gantt chart -->
+    <h2>Gantt Chart</h2>
+
+    <div id="gantt">
+
+    </div>
+    <!-- comparison table -->
+
+<h2>Algorithm Comparison</h2>
+
+<table>
+
+    <tr>
+
+        <th>Algorithm</th>
+        <th>Average Waiting Time</th>
+        <th>Description</th>
+
+    </tr>
+
+    <tr>
+
+        <td>FCFS</td>
+        <td>8.0</td>
+        <td>Simple scheduling method</td>
+
+    </tr>
+
+    <tr>
+
+        <td>Round Robin</td>
+        <td>6.0</td>
+        <td>Fair CPU sharing</td>
+
+    </tr>
+
+    <tr>
+
+        <td>Priority</td>
+        <td>5.0</td>
+        <td>Higher priority tasks first</td>
+
+    </tr>
+
+</table>    
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
